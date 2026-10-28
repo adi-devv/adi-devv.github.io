@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aadit Singal</title>
+<meta name="description" content="Aadit Singal, software engineer working on LLM agents, evaluation and the tooling around them. B.Tech CSE (AI &amp; ML), VIT Bhopal, 2026.">
+<meta name="color-scheme" content="light dark">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600&family=Geist+Mono:wght@400;500&display=swap">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23101413'/%3E%3Crect x='9' y='9' width='14' height='14' fill='none' stroke='%2358c4b8' stroke-width='2.5'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="top">
+  <h1>Aadit Singal</h1>
+  <p class="intro">Software engineer building LLM agents and the evaluation and tooling around them. B.Tech CSE (AI&nbsp;&amp;&nbsp;ML), VIT Bhopal, 2026.</p>
+  <nav class="links" aria-label="Links">
+    <a href="https://github.com/adi-devv">GitHub</a>
+    <a href="https://linkedin.com/in/aaditsingal">LinkedIn</a>
+    <a href="mailto:aaditsingalw@gmail.com">Email</a>
+    <a href="resume.pdf">Résumé&nbsp;(PDF)</a>
+  </nav>
+</header>
+
+<main id="main">
+
+  <section aria-labelledby="h-experience">
+    <h2 id="h-experience"><span>01</span> Experience</h2>
+    <div class="body">
+
+      <article>
+        <header>
+          <h3>Software Engineering Intern <span class="at">· Kodo (YC W21), Mumbai</span></h3>
+          <p class="date">Jul 2026 – Oct 2026</p>
+        </header>
+        <p class="stack">Python, LangChain, LangSmith, asyncio, PostgreSQL, Azure, Docker</p>
+        <ul>
+          <li>Raised a production AI finance agent’s eval pass rate from 68% to 85% with zero regressions by fixing order routing, risk checks and ID handling in its ReAct prompt, output schema and LLM judges.</li>
+          <li>Cut the LLM eval suite’s runtime 16× (25 min → 1.5 min) by running test cases concurrently with asyncio and moving blocking LLM-judge calls off the event loop, and added repeated-run pass rates to separate flaky cases from real regressions.</li>
+          <li>Benchmarked 10 LLM-as-judge configurations and replaced a two-model judge with one, cutting grading cost 93% and latency 52% at the same accuracy.</li>
+          <li>Made the agent’s currency math deterministic by moving lakh/crore scaling from the LLM into a tool, eliminating 10× errors.</li>
+          <li>Built LangChain tools over ERP, payments and banking data (SQL, REST APIs) with pagination and deduplication.</li>
+          <li>Added production observability: LangSmith tracing of every SQL and HTTP call under the agent’s tools, and per-chat outcome logging linked to frontend sessions in New Relic.</li>
+        </ul>
+      </article>
+
+      <article>
+        <header>
+          <h3>AI/ML Engineering Intern <span class="at">· Anubal Fusion, Hyderabad</span></h3>
+          <p class="date">Sep 2025 – Mar 2026</p>
+        </header>
+        <p class="stack">Python, Flask, TomoPy, OpenCV, 3D Slicer</p>
+        <ul>
+          <li>Built the lab’s Micro-CT scanner software (Flask → Windows .exe): calibration, motorized rotation, dual-camera capture and XY stage control over serial G-code.</li>
+          <li>Implemented 3D reconstruction with TomoPy (gridrec, FBP, SIRT/ART) and dark/flat-field correction, with an in-browser slice viewer and one-click volume rendering in 3D Slicer.</li>
+        </ul>
+      </article>
+
+    </div>
+  </section>
+
+  <section aria-labelledby="h-projects">
+    <h2 id="h-projects"><span>02</span> Projects</h2>
+    <div class="body">
+
+      <article>
+        <header>
+          <h3>Mantis <span class="at">· Lean browser interface for LLM agents</span></h3>
+          <p class="date">Oct 2026 – Present</p>
+        </header>
+        <p class="stack">TypeScript, MCP, Node.js, Playwright</p>
+        <ul>
+          <li>Open-source MCP server that gives agents numbered text page views instead of screenshots or full accessibility trees, cutting tokens and tool calls while matching or beating accuracy.</li>
+          <li>On real-site benchmarks (Luna / Haiku): 29–47% fewer input tokens, 29–37% fewer calls and less time on long tasks; 35–57% fewer tokens on short tasks vs a Playwright accessibility-tree baseline.</li>
+        </ul>
+        <p class="proj-links"><a href="https://github.com/perzianhq/mantis">GitHub</a><a href="https://perzian.dev/mantis/">Live</a></p>
+      </article>
+
+      <article>
+        <header>
+          <h3>VedicAI <span class="at">· Multilingual voice AI health assistant</span></h3>
+          <p class="date">Feb 2026 – Present</p>
+        </header>
+        <p class="stack">Flask, Llama 3.3 70B, Sarvam AI, WebSockets, Firebase, Docker</p>
+        <ul>
+          <li>Selected into the Sarvam AI Startup Program; voice-first Ayurveda and yoga assistant in 11 Indian languages.</li>
+          <li>Built a real-time streaming voice pipeline (live speech-to-text → LLM → parallel translation and text-to-speech per sentence) with emergency triage and persistent chat memory.</li>
+        </ul>
+        <p class="proj-links"><a href="https://github.com/adi-devv/doctor-ai">GitHub</a><a href="https://vedic.web.app/">Live</a></p>
+      </article>
+
+      <article>
+        <header>
+          <h3>VBay <span class="at">· Peer-to-peer campus marketplace</span></h3>
+          <p class="date">Oct 2024 – May 2025</p>
+        </header>
+        <p class="stack">Flutter, Firebase, GCP Cloud Functions, OAuth</p>
+        <ul>
+          <li>Launched a P2P marketplace app on the Google Play Store; grew to 2,000+ users on 2 campuses, 500+ listings and 100+ transactions.</li>
+          <li>Built real-time buying and selling flows, OAuth sign-in, push notifications and a serverless backend on GCP Cloud Functions.</li>
+        </ul>
+        <p class="proj-links"><a href="https://github.com/adi-devv/vbay">GitHub</a></p>
+      </article>
+
+    </div>
+  </section>
+
+  <section aria-labelledby="h-education">
+    <h2 id="h-education"><span>03</span> Education</h2>
+    <div class="body">
+      <article>
+        <header>
+          <h3>Vellore Institute of Technology, Bhopal</h3>
+          <p class="date">2022 – 2026</p>
+        </header>
+        <p>B.Tech in CSE with specialization in AI &amp; ML. GPA 8.19 / 10.0.</p>
+      </article>
+      <article>
+        <h3 class="plain">Achievements</h3>
+        <ul>
+          <li>Founding Member, Startup Club (2024–25): organized 7+ ideathons engaging 500+ students.</li>
+          <li>National Research Scholar, Vision for Viksit Bharat 2024: authored a paper on AI/VR for cultural heritage preservation.</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <section aria-labelledby="h-skills">
+    <h2 id="h-skills"><span>04</span> Skills</h2>
+    <div class="body">
+      <dl class="skills">
+        <div><dt>Languages</dt><dd>Python, SQL, JavaScript, TypeScript, Dart, C++</dd></div>
+        <div><dt>AI / ML</dt><dd>LLM Agents, LLM Evaluation, RAG, LangChain, LangSmith, MCP, ACP, PyTorch, scikit-learn, OpenCV, NumPy</dd></div>
+        <div><dt>Backend &amp; Infra</dt><dd>Flask, REST APIs, WebSockets, asyncio, PostgreSQL, Docker, GitHub Actions (CI/CD), Git, Linux</dd></div>
+        <div><dt>Cloud &amp; Apps</dt><dd>Azure, GCP, Firebase, Flutter, Streamlit, Electron</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <section aria-labelledby="h-contact">
+    <h2 id="h-contact"><span>05</span> Contact</h2>
+    <div class="body">
+      <ul class="contact">
+        <li><span>Email</span><a href="mailto:aaditsingalw@gmail.com">aaditsingalw@gmail.com</a></li>
+        <li><span>GitHub</span><a href="https://github.com/adi-devv">github.com/adi-devv</a></li>
+        <li><span>LinkedIn</span><a href="https://linkedin.com/in/aaditsingal">linkedin.com/in/aaditsingal</a></li>
+        <li><span>Résumé</span><a href="resume.pdf">resume.pdf</a></li>
+      </ul>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>Aadit Singal</p>
+</footer>
+
+</body>
+</html>
