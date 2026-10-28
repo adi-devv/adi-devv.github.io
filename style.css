@@ -182,13 +182,13 @@ a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-
 }
 .btn:hover { background-size: 100% 100%; color: var(--bg); }
 
-.text-link, .card-links a, .contact-line a, footer a {
+.text-link, .card-links a, footer a {
   text-decoration: none;
   background: linear-gradient(var(--accent), var(--accent)) no-repeat 0 100% / 100% 1px;
   padding-bottom: 3px;
   transition: background-size .35s var(--ease), color .2s;
 }
-.text-link:hover, .card-links a:hover, .contact-line a:hover, footer a:hover {
+.text-link:hover, .card-links a:hover, footer a:hover {
   background-size: 0 1px;
   background-position: 100% 100%;
   color: var(--accent);
@@ -333,10 +333,8 @@ h3 span { font-weight: 400; color: var(--muted); }
 .marquee:hover .track { animation-play-state: paused; }
 
 /* contact */
-.contact-line { margin: 0; color: var(--muted); }
 .big-mail {
   display: inline-block;
-  margin-top: 1rem;
   font-size: clamp(1.4rem, 5.5vw, 3.25rem);
   font-weight: 300;
   letter-spacing: -.03em;
